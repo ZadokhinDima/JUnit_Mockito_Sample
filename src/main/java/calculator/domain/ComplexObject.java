@@ -7,6 +7,8 @@ public class ComplexObject {
 
     private int valueA, valueB;
 
+    private Service service;
+
     public int getValueA() {
         return valueA;
     }
@@ -23,6 +25,14 @@ public class ComplexObject {
         this.valueB = valueB;
     }
 
+    public Service getService() {
+        return service;
+    }
+
+    public void setService(Service service) {
+        this.service = service;
+    }
+
     public ComplexObject() {
     }
 
@@ -30,6 +40,13 @@ public class ComplexObject {
         this.valueA = valueA;
         this.valueB = valueB;
     }
+
+    public ComplexObject(int valueA, int valueB, Service service) {
+        this.valueA = valueA;
+        this.valueB = valueB;
+        this.service = service;
+    }
+
 
     @Override
     public String toString() {
@@ -46,8 +63,7 @@ public class ComplexObject {
 
         ComplexObject that = (ComplexObject) o;
 
-        if (valueA != that.valueA) return false;
-        return valueB == that.valueB;
+        return valueA == that.valueA && valueB == that.valueB;
 
     }
 
