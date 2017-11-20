@@ -32,21 +32,25 @@ public class Calculator {
 
     public ComplexObject add(ComplexObject param1, ComplexObject param2) {
         validate(param1, param2);
+        statisticsService.newAddition();
         return countingService.add(param1, param2);
     }
 
     public ComplexObject subtract(ComplexObject param1, ComplexObject param2) {
         validate(param1, param2);
+        statisticsService.newSubtraction();
         return countingService.subtract(param1, param2);
     }
 
     public ComplexObject multiply(ComplexObject param1, ComplexObject param2) {
         validate(param1, param2);
+        statisticsService.newMultiplication();
         return countingService.multiply(param1, param2);
     }
 
     public ComplexObject divide(ComplexObject param1, ComplexObject param2) {
         validate(param1, param2);
+        statisticsService.newDivision();
         return countingService.divide(param1, param2);
     }
 

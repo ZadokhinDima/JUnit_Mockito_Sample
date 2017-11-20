@@ -20,6 +20,22 @@ public class StatisticServiceImpl implements StatisticsService {
         divisions++;
     }
 
+    public int getAdditions() {
+        return additions;
+    }
+
+    public int getSubtractions() {
+        return subtractions;
+    }
+
+    public int getMultiplications() {
+        return multiplications;
+    }
+
+    public int getDivisions() {
+        return divisions;
+    }
+
     public void printStatistics() {
         System.out.println("Additions: " + additions);
         System.out.println("Subtractions: " + subtractions);

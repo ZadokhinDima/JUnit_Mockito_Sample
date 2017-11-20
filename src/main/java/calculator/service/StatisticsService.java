@@ -10,6 +10,14 @@ public interface StatisticsService {
 
     void newDivision();
 
+    int getAdditions();
+
+    int getSubtractions();
+
+    int getMultiplications();
+
+    int getDivisions();
+
     void printStatistics();
 
 }
