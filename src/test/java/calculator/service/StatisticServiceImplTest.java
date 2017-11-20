@@ -11,38 +11,36 @@ public class StatisticServiceImplTest {
 
     @Test
     public void newAdditionTest() throws Exception {
-        Assert.assertEquals(0, statisticsService.getAdditions());
-        statisticsService.newAddition();
-        statisticsService.newAddition();
-        statisticsService.newAddition();
-        Assert.assertEquals(3, statisticsService.getAdditions());
+       assertEquals(1, statisticsService.newAddition());
+       assertEquals(2, statisticsService.newAddition());
+       assertEquals(3, statisticsService.newAddition());
+       assertEquals(4, statisticsService.newAddition());
     }
 
     @Test
     public void newSubtractionTest() throws Exception {
-        Assert.assertEquals(0, statisticsService.getSubtractions());
-        statisticsService.newSubtraction();
-        statisticsService.newSubtraction();
-        statisticsService.newSubtraction();
-        Assert.assertEquals(3, statisticsService.getSubtractions());
+       assertEquals(1, statisticsService.newSubtraction());
+       assertEquals(2, statisticsService.newSubtraction());
+       assertEquals(3, statisticsService.newSubtraction());
+       assertEquals(4, statisticsService.newSubtraction());
+       assertEquals(5, statisticsService.newSubtraction());
     }
 
     @Test
     public void newMultiplicationTest() throws Exception {
-        Assert.assertEquals(0, statisticsService.getMultiplications());
-        statisticsService.newMultiplication();
-        statisticsService.newMultiplication();
-        statisticsService.newMultiplication();
-        Assert.assertEquals(3, statisticsService.getMultiplications());
+        assertEquals(1, statisticsService.newMultiplication());
+        assertEquals(2, statisticsService.newMultiplication());
+        assertEquals(3, statisticsService.newMultiplication());
+        assertEquals(4, statisticsService.newMultiplication());
     }
 
     @Test
     public void newDivisionTest() throws Exception {
-        Assert.assertEquals(0, statisticsService.getDivisions());
-        statisticsService.newDivision();
-        statisticsService.newDivision();
-        statisticsService.newDivision();
-        Assert.assertEquals(3, statisticsService.getDivisions());
+       assertEquals(1, statisticsService.newDivision());
+       assertEquals(2, statisticsService.newDivision());
+       assertEquals(3, statisticsService.newDivision());
+       assertEquals(4, statisticsService.newDivision());
+       assertEquals(5, statisticsService.newDivision());
     }
 
 

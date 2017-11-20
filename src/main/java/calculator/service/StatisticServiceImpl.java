@@ -4,42 +4,20 @@ public class StatisticServiceImpl implements StatisticsService {
 
     private int additions, subtractions, multiplications, divisions;
 
-    public void newAddition() {
-        additions++;
+    public int newAddition() {
+        return ++additions;
     }
 
-    public void newSubtraction() {
-        subtractions++;
+    public int newSubtraction() {
+        return ++subtractions;
     }
 
-    public void newMultiplication() {
-        multiplications++;
+    public int newMultiplication() {
+        return ++multiplications;
     }
 
-    public void newDivision() {
-        divisions++;
+    public int newDivision() {
+        return ++divisions;
     }
 
-    public int getAdditions() {
-        return additions;
-    }
-
-    public int getSubtractions() {
-        return subtractions;
-    }
-
-    public int getMultiplications() {
-        return multiplications;
-    }
-
-    public int getDivisions() {
-        return divisions;
-    }
-
-    public void printStatistics() {
-        System.out.println("Additions: " + additions);
-        System.out.println("Subtractions: " + subtractions);
-        System.out.println("Multiplications: " + multiplications);
-        System.out.println("Divisions: " + divisions);
-    }
 }

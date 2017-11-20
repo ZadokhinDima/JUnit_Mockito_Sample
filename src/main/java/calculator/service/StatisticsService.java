@@ -2,22 +2,12 @@ package calculator.service;
 
 public interface StatisticsService {
 
-    void newAddition();
+    int newAddition();
 
-    void newSubtraction();
+    int newSubtraction();
 
-    void newMultiplication();
+    int newMultiplication();
 
-    void newDivision();
-
-    int getAdditions();
-
-    int getSubtractions();
-
-    int getMultiplications();
-
-    int getDivisions();
-
-    void printStatistics();
+    int newDivision();
 
 }
